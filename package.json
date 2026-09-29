@@ -1,0 +1,15 @@
+{
+  "name": "nodered-industrial-automation",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "node-red --settings settings.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "node-red": "4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
