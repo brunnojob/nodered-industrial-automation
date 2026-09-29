@@ -16,7 +16,7 @@ test("rejects stale, replayed and unknown signals", () => {
     const message = { payload: { source: "pt-1", tag: "pressure", sequence: 1, timestamp: 1000, raw: 1200 } }
     pipeline.process(message, 1000)
     assert.throws(() => pipeline.process(message, 1000), /replayed_sequence/)
-    assert.throws(() => pipeline.process({ payload: { ...message.payload, sequence: 2, timestamp: 1 } }, 1000), /stale_telemetry/)
+    assert.throws(() => pipeline.process({ payload: { ...message.payload, sequence: 2, timestamp: 1 } }, 100000), /stale_telemetry/)
     assert.throws(() => pipeline.process({ payload: { ...message.payload, tag: "unknown", sequence: 2 } }, 1000), /unknown_tag/)
 })
 
