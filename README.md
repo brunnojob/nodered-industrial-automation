@@ -23,3 +23,9 @@ The Node-RED flow uses `lib/archive.cjs` for its persistent delivery queue. Set 
 ## License
 
 Original source and documentation are MIT licensed; see [LICENSE](LICENSE). Third-party dependencies and media retain their respective terms. Maintained by [Brunno Dev](https://brunnodev.store).
+
+## Implementation update
+
+Pipeline creation rejects non-finite or inverted calibration and hysteresis settings. Explicit invalid timestamps are rejected without consuming the source sequence. Run `npm test` from the repository root.
+
+Contribution trailer: `Co-authored-by: nyctophile <33561761+ineedfoundmyway@users.noreply.github.com>`.
