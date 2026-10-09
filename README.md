@@ -16,9 +16,9 @@ npm start
 
 Configure the broker in `flows/offshore-telemetry.json`. `ARCHIVE_DIRECTORY` selects the local queue directory; `BRUNNODEV_ACCESS_TOKEN` authenticates synchronization. The flow persists data before sending and retains it until the server confirms persistence.
 
-## Optional report archive
+## Archive
 
-Export a JSON report from the command above, then run `python cloud/sync.py enqueue result.json --project nodered-industrial-automation` and `python cloud/sync.py sync`. Synchronization requires `BRUNNODEV_ACCESS_TOKEN` and the external operations API; the local outbox retains unacknowledged reports.
+The Node-RED flow uses `lib/archive.cjs` for its persistent delivery queue. Set `BRUNNODEV_ACCESS_TOKEN` before sending to the operations API.
 
 ## License
 
