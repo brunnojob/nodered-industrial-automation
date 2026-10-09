@@ -34,7 +34,11 @@
     "inputs": 0,
     "x": 180,
     "y": 160,
-    "wires": [["normalize"]]
+    "wires": [
+      [
+        "normalize"
+      ]
+    ]
   },
   {
     "id": "normalize",
@@ -50,7 +54,15 @@
     "libs": [],
     "x": 420,
     "y": 160,
-    "wires": [["normalized-debug"], ["alarm-output"]]
+    "wires": [
+      [
+        "normalized-debug",
+        "archive-persist"
+      ],
+      [
+        "alarm-output"
+      ]
+    ]
   },
   {
     "id": "normalized-debug",
@@ -80,6 +92,17 @@
     "targetType": "msg",
     "x": 690,
     "y": 200,
+    "wires": []
+  },
+  {
+    "id": "archive-persist",
+    "type": "function",
+    "z": "offshore-tab",
+    "name": "Persist and synchronize",
+    "func": "const archive = global.get('archive');\ntry { archive.enqueue(msg.payload); } catch (error) { node.error(error, msg); done(); return; }\narchive.drain().then(() => done()).catch(error => { node.warn(error.message); done(); });\nreturn;",
+    "outputs": 0,
+    "x": 650,
+    "y": 240,
     "wires": []
   }
 ]
