@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "brunnojob/nodered-industrial-automation",
-  "source_commit": "aaccfa946e241df4b0fd8f15ca0f2c2b372c03b1",
-  "generated_at": "2026-10-10T02:34:49.492308+00:00",
-  "run_url": "https://github.com/brunnojob/nodered-industrial-automation/actions/runs/38017476368",
+  "source_commit": "ef63923241bd41daaafcb95600a011314852dcd8",
+  "generated_at": "2026-10-10T02:43:06.351101+00:00",
+  "run_url": "https://github.com/brunnojob/nodered-industrial-automation/actions/runs/38017971954",
   "inputs_sha256": {
     ".proof/scenarios.json": "b1eed24ac281e866f56efef8b3c615fbe79042147539099b122fad612646d673",
     ".proof/demo.cjs": "6a877a26a38b44ad9ead17dd3fe5ac9ef276b3f58e35d455553a799ce4939a5d"
@@ -23,9 +23,9 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 3.559,
-      "output": "npm warn deprecated uuid@9.0.1: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).\nnpm warn deprecated tar@7.4.3: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\n\nadded 279 packages, and audited 280 packages in 3s\n\n53 packages are looking for funding\n  run `npm fund` for details\n\n19 vulnerabilities (5 moderate, 12 high, 2 critical)\n\nTo address all issues, run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
-      "output_sha256": "b44c9cf193d4ac9368af5bba0ca835c4269b57966b896c3d7145e2b9f8e1b915"
+      "seconds": 5.769,
+      "output": "npm warn deprecated uuid@9.0.1: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).\nnpm warn deprecated tar@7.4.3: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\n\nadded 279 packages, and audited 280 packages in 6s\n\n53 packages are looking for funding\n  run `npm fund` for details\n\n19 vulnerabilities (5 moderate, 12 high, 2 critical)\n\nTo address all issues, run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n",
+      "output_sha256": "048c60ad9c59e978ffa3336d792d4d87ddc1fe16868bd29de2432e8f1e612d53"
     },
     {
       "display": true,
@@ -41,9 +41,9 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 0.251,
-      "output": "\n> nodered-industrial-automation@1.0.0 test\n> node --test\n\n✔ failed delivery survives restart and confirmed delivery removes it (71.731293ms)\n✔ alarms require valid quality and emit transitions once (0.406782ms)\n✔ normalizes engineering units and creates high alarms (0.715186ms)\n✔ rejects stale, replayed and unknown signals (0.329265ms)\n✔ flow is importable and routes telemetry and alarms (0.184478ms)\n✔ invalid calibration and explicit invalid timestamps are rejected (1.000595ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 128.649291\n",
-      "output_sha256": "742d75bd554a62e06113d56a74d4f8cd8f86ff6a8a9c3017313b712bba9a0dae"
+      "seconds": 0.352,
+      "output": "\n> nodered-industrial-automation@1.0.0 test\n> node --test\n\n✔ failed delivery survives restart and confirmed delivery removes it (101.378354ms)\n✔ alarms require valid quality and emit transitions once (0.542357ms)\n✔ normalizes engineering units and creates high alarms (0.972698ms)\n✔ rejects stale, replayed and unknown signals (0.473374ms)\n✔ flow is importable and routes telemetry and alarms (0.245871ms)\n✔ invalid calibration and explicit invalid timestamps are rejected (1.136374ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 170.801905\n",
+      "output_sha256": "aba377befccde97f62e31b846b19cd695e79353879a6ce068a860912c72f66fb"
     },
     {
       "display": true,
