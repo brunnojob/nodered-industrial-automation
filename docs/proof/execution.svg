@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="552" viewBox="0 0 1100 552">
+<rect width="1100" height="552" rx="12" fill="#0d1117"/>
+<title>Recorded program execution</title>
+<g font-family="monospace" font-size="16">
+<text x="24" y="36" fill="#c9d1d9">brunnojob/nodered-industrial-automation</text>
+<text x="24" y="58" fill="#c9d1d9">Executed: 2026-10-10T02:34:49.492308+00:00</text>
+<text x="24" y="80" fill="#c9d1d9">Source: aaccfa946e24</text>
+<text x="24" y="102" fill="#c9d1d9"></text>
+<text x="24" y="124" fill="#3fb950">PASS npm test</text>
+<text x="24" y="146" fill="#79c0ff">$ bash -e -o pipefail -c npm test</text>
+<text x="24" y="168" fill="#c9d1d9">&gt; nodered-industrial-automation@1.0.0 test</text>
+<text x="24" y="190" fill="#c9d1d9">&gt; node --test</text>
+<text x="24" y="212" fill="#c9d1d9">✔ failed delivery survives restart and confirmed delivery removes it (71.731293ms)</text>
+<text x="24" y="234" fill="#c9d1d9">✔ alarms require valid quality and emit transitions once (0.406782ms)</text>
+<text x="24" y="256" fill="#c9d1d9">✔ normalizes engineering units and creates high alarms (0.715186ms)</text>
+<text x="24" y="278" fill="#c9d1d9">✔ rejects stale, replayed and unknown signals (0.329265ms)</text>
+<text x="24" y="300" fill="#c9d1d9">✔ flow is importable and routes telemetry and alarms (0.184478ms)</text>
+<text x="24" y="322" fill="#c9d1d9">✔ invalid calibration and explicit invalid timestamps are rejected (1.000595ms)</text>
+<text x="24" y="344" fill="#c9d1d9">Full output: evidence.json</text>
+<text x="24" y="366" fill="#c9d1d9"></text>
+<text x="24" y="388" fill="#3fb950">PASS Normalize ADC pressure, raise a high alarm and reject replay</text>
+<text x="24" y="410" fill="#79c0ff">$ node .proof/demo.cjs</text>
+<text x="24" y="432" fill="#c9d1d9">{&quot;normalized&quot;:{&quot;source&quot;:&quot;PT101&quot;,&quot;tag&quot;:&quot;pressure&quot;,&quot;sequence&quot;:1,&quot;timestamp&quot;:1000,&quot;raw&quot;:3800,&quot;value&quot;:231.9902</text>
+<text x="24" y="454" fill="#c9d1d9">31990232,&quot;unit&quot;:&quot;bar&quot;,&quot;quality&quot;:&quot;good&quot;},&quot;alarm&quot;:{&quot;severity&quot;:&quot;high&quot;,&quot;state&quot;:&quot;raised&quot;,&quot;source&quot;:&quot;PT101&quot;,&quot;tag&quot;</text>
+<text x="24" y="476" fill="#c9d1d9">:&quot;pressure&quot;,&quot;sequence&quot;:1,&quot;timestamp&quot;:1000,&quot;raw&quot;:3800,&quot;value&quot;:231.990231990232,&quot;unit&quot;:&quot;bar&quot;,&quot;quality&quot;:&quot;good</text>
+<text x="24" y="498" fill="#c9d1d9">&quot;},&quot;replayRejected&quot;:true}</text>
+</g>
+</svg>
