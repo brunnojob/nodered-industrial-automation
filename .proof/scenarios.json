@@ -1,0 +1,47 @@
+{
+  "repository": "brunnojob/nodered-industrial-automation",
+  "inputs": [
+    ".proof/scenarios.json",
+    ".proof/demo.cjs"
+  ],
+  "cases": [
+    {
+      "name": "npm ci",
+      "argv": [
+        "bash",
+        "-e",
+        "-o",
+        "pipefail",
+        "-c",
+        "npm ci"
+      ],
+      "timeout": 900,
+      "display": false
+    },
+    {
+      "name": "npm test",
+      "argv": [
+        "bash",
+        "-e",
+        "-o",
+        "pipefail",
+        "-c",
+        "npm test"
+      ],
+      "timeout": 900,
+      "display": true
+    },
+    {
+      "name": "Normalize ADC pressure, raise a high alarm and reject replay",
+      "argv": [
+        "node",
+        ".proof/demo.cjs"
+      ],
+      "contains": [
+        "\"unit\":\"bar\"",
+        "\"replayRejected\":true"
+      ],
+      "timeout": 120
+    }
+  ]
+}
