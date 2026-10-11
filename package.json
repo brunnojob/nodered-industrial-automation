@@ -11,5 +11,10 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "overrides": {
+    "@node-red/util": {
+      "jsonata": "2.2.1"
+    }
   }
 }
