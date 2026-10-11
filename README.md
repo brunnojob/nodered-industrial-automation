@@ -1,5 +1,7 @@
 # Industrial Automation
 
+[View execution evidence](https://brunnojob.github.io/devstart-lab/proofs/nodered-industrial-automation/)
+
 An MQTT and Node-RED flow with engineering units, sequence tracking, quality checks, alarm hysteresis, and a persistent delivery queue.
 
 ## Run
